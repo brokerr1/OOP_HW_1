@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        List<Product> list = new ArrayList<Product>(
+        List<Product> list = new ArrayList<>(
                 Arrays.asList(
                         new Product("Mars", 100.5),
                         new Product("Twix", 50.00)
