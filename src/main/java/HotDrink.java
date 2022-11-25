@@ -12,4 +12,10 @@ public class HotDrink extends Drink{
     public void setTemp(Double temp) {
         this.temp = temp;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", temp=" + temp;
+    }
 }
