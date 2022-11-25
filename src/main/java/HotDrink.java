@@ -18,4 +18,19 @@ public class HotDrink extends Drink{
         return super.toString() +
                 ", temp=" + temp;
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof HotDrink)) {
+            return false;
+        }
+
+        HotDrink that = (HotDrink) o;
+
+        return super.getName().equalsIgnoreCase(that.getName())
+                && super.getCost() == that.getCost()
+                && getVolume() == that.getVolume();
+    }
 }
